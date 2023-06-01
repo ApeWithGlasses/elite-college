@@ -21,6 +21,9 @@ public class Acudiente {
     @JoinColumn(name="id_estudiante")
     private Estudiante estudiante;
 
+    @Transient
+    private String mensajeError;
+
     public Acudiente() {
     }
 
@@ -61,5 +64,13 @@ public class Acudiente {
 
     public void setEstudiante(Estudiante estudiante) {
         this.estudiante = estudiante;
+    }
+
+    public String getMensajeError() {
+        return mensajeError;
+    }
+
+    public void setMensajeError(String mensajeError) {
+        this.mensajeError = mensajeError;
     }
 }

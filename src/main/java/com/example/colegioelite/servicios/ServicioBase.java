@@ -1,6 +1,4 @@
-package com.example.colegioelite.servicio;
-
-import org.springframework.stereotype.Service;
+package com.example.colegioelite.servicios;
 
 import java.util.List;
 

@@ -24,6 +24,8 @@ public class Estudiante {
     @OneToOne(mappedBy = "estudiante", cascade = CascadeType.ALL)
     private Acudiente acudiente;
 
+    @Transient
+    private String mensajeError;
 
     public Estudiante() {
     }
@@ -74,5 +76,13 @@ public class Estudiante {
 
     public void setAcudiente(Acudiente acudiente) {
         this.acudiente = acudiente;
+    }
+
+    public String getMensajeError() {
+        return mensajeError;
+    }
+
+    public void setMensajeError(String mensajeError) {
+        this.mensajeError = mensajeError;
     }
 }

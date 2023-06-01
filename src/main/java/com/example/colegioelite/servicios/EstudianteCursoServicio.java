@@ -1,4 +1,4 @@
-package com.example.colegioelite.servicio;
+package com.example.colegioelite.servicios;
 
 import com.example.colegioelite.entidades.EstudianteCurso;
 import org.springframework.stereotype.Service;
